@@ -1,0 +1,134 @@
+{
+  "company": {
+    "name": "DigiMinds",
+    "tagline": "Zero fluff. Pure ROI. Performance-backed, 90-day guarantee.",
+    "website": "https://digiminds.org",
+    "founded": "2019-2021 (inferred)",
+    "hq": {
+      "address": "Ansari Market, Rehman Street, Lahore, Pakistan",
+      "city": "Lahore",
+      "country": "Pakistan"
+    },
+    "markets_served": ["Pakistan", "United States", "Canada", "United Kingdom", "United Arab Emirates"],
+    "positioning": "Globally operating performance agency and Fractional CMO partner. We don't just run ads; we build the underlying data, tracking, and CRM architecture."
+  },
+
+  "services": {
+    "sem_paid_media": {
+      "label": "SEM & Paid Media",
+      "platforms": ["Google Ads", "Meta (Facebook/Instagram)", "TikTok Ads", "YouTube", "LinkedIn Ads (B2B)"],
+      "focus": "Qualified leads and direct sales, not vanity metrics",
+      "typical_kpis": ["ROAS", "CAC", "qualified appointments", "MQL→SQL ratio"]
+    },
+    "high_ticket_lead_gen": {
+      "label": "High-Ticket Lead Generation",
+      "audience": "B2B and B2C with AOV > $2,000",
+      "stack": "Multi-channel paid + intent-based nurturing + CRM automation",
+      "verticals_examples": ["HVAC contractors", "SaaS", "high-ticket B2B", "B2C relocation services"]
+    },
+    "dtc_ecom_growth": {
+      "label": "DTC Ecommerce Growth",
+      "audience": "Private-label and proprietary brands",
+      "capabilities": ["Shopping feed optimization", "full-funnel creative", "retention flows (email/SMS)", "LTV/CAC modeling"],
+      "verticals_examples": ["DTC apparel", "skincare", "beauty", "home goods"]
+    },
+    "data_tracking_crm": {
+      "label": "Data & Tracking + CRM Automation",
+      "stack": ["Google Analytics 4 (GA4)", "Google Tag Manager (GTM)", "Server-side tagging (sGTM)", "GoHighLevel (GHL)", "Meta CAPI", "HubSpot", "Salesforce (on request)"],
+      "deliverables": "Closed-loop attribution: ad click → CRM record → revenue back to ad platform"
+    },
+    "seo_aeo": {
+      "label": "SEO & Answer Engine Optimization",
+      "scope": ["Technical SEO", "content strategy", "link building (white-hat)", "AI search optimization (ChatGPT, Perplexity, Google AI Overviews)", "schema markup"],
+      "typical_timeline": "First movement 60–90 days, meaningful traffic 4–6 months"
+    }
+  },
+
+  "certifications_and_partners": [
+    "Google Ads Partner (AW-16713199776)",
+    "Google Site Kit / GTM integrated",
+    "Meta Business Partner (implied)",
+    "GoHighLevel certified implementation partner"
+  ],
+
+  "guarantee": {
+    "label": "90-Day Performance Guarantee",
+    "definition": "If agreed KPIs (defined in the scope of work) are not met within 90 days of campaign launch, DigiMinds continues work at no additional management fee until targets are met or client is refunded management fees for months that missed targets. Ad spend is never refunded — it belongs to the platform.",
+    "conditions": [
+      "Minimum ad spend commitment met by client",
+      "Access to all ad accounts, CRM, and analytics maintained",
+      "KPI framework signed off at kick-off",
+      "No major scope changes by client mid-flight"
+    ]
+  },
+
+  "pricing_framework": {
+    "public_pricing_policy": "No fixed public pricing — custom scoped per engagement",
+    "approved_ranges_for_chatbot": {
+      "starter_smb_pk": "PKR 150,000 – 450,000/month (USD ~550–1,600)",
+      "growth_dtc": "USD 3,000 – 7,500/month management + ad spend",
+      "high_ticket_lead_gen": "USD 4,500 – 12,000/month + performance bonus",
+      "enterprise_fractional_cmo": "USD 8,000 – 25,000/month",
+      "one_time_audit": "USD 750 – 2,500 (credited against first retainer)",
+      "tracking_only_sprint": "USD 2,500 – 6,000 flat (2–4 weeks)"
+    },
+    "engagement_minimums": {
+      "retainer": "3-month initial commitment aligned with 90-day guarantee",
+      "pk_smb": "2 months, negotiable"
+    },
+    "payment_methods": {
+      "pakistan_clients": ["IBFT (bank transfer)", "JazzCash", "EasyPaisa", "Cheque (enterprise)"],
+      "international": ["Wise", "Payoneer", "Bank wire (USD)", "Stripe invoice (US LLC)", "USDT TRC-20 (on request)"],
+      "not_accepted": ["PayPal (PK merchant limitations)", "Western Union", "Cash on delivery"]
+    },
+    "invoicing": "Monthly advance invoice; enterprise 50% kickoff / 50% day-30 available; PKR or USD"
+  },
+
+  "team_and_credentials": {
+    "leadership": "Founder-led; Fractional CMO model means senior strategists on every account",
+    "team_size_range": "15–40 specialists (paid media, creative, tracking, content, account management)",
+    "on_account_staffing": "Senior strategist + paid media lead + creative/tracking support per client — no junior-only pods",
+    "availability": "PK business hours + overlap with US PT/ET via dedicated account managers; UK/EU hours covered; WhatsApp Business response <30 min during business hours"
+  },
+
+  "case_study_templates": {
+    "instruction_for_chatbot": "Use only these templated outcome statements until DigiMinds provides specific client names. Never invent brand names. Offer to send full case study PDF after email capture.",
+    "dtc_skincare": "Scaled a private-label skincare brand from USD 22k/mo to USD 180k/mo in 7 months — 4.1x blended ROAS, server-side tracking recovery restored 38% of pixel-lost events.",
+    "hvac_contractor": "14 HVAC contractors onboarded in 18 months — average cost-per-booked-job reduced from USD 220 to USD 68 via geo-intent Google Ads + GHL appointment automation.",
+    "b2b_saas": "Mid-market SaaS: MQL volume +217% in 90 days, SQL conversion rate doubled after LinkedIn + Google intent layering and HubSpot–ad-platform closed-loop.",
+    "b2c_relocation": "International relocation service: quote-request CPL cut 61% across US/UAE corridors via multi-language Meta + Google PMax with consented first-party data.",
+    "tracking_rescue": "Ecom brand losing 42% of attribution post-iOS14.5 — restored to 91% accuracy in 3 weeks via sGTM + CAPI + consent mode v2, unlocked USD 2.3M/yr in better budget decisions."
+  },
+
+  "brand_voice": {
+    "adjectives": ["direct", "evidence-led", "respectful", "operator-minded", "no-jargon-unless-earned"],
+    "avoid": ["marketing fluff", "superlatives without numbers", "false urgency", "we guarantee page-one in 7 days type promises"],
+    "signature_phrases": [
+      "Zero fluff. Pure ROI.",
+      "We don't just run ads — we build the system behind them.",
+      "If it can't be measured, it doesn't ship.",
+      "90-day guarantee means we sweat the numbers with you."
+    ]
+  },
+
+  "contact_channels": {
+    "website_form": "https://digiminds.org/contact (capture: name, email, service, budget range, timeline)",
+    "calendar": "To be published — Calendly/Cal.com link",
+    "whatsapp_business": "To be confirmed — +92 prefix recommended for PK visibility",
+    "email": "hello@digiminds.org (verify)",
+    "linkedin": "linkedin.com/company/digiminds (verify)"
+  },
+
+  "declined_verticals": [
+    "Gambling / casino / sports betting",
+    "Adult content / OnlyFans / cam sites",
+    "Pakistani forex / crypto lead generation (SBP illegal)",
+    "Unlicensed medical or health 'cure' claims",
+    "Fake review generation / review manipulation",
+    "Black-hat SEO (PBNs, link schemes, cloaking)",
+    "Pakistani political campaigns (PECA/ECP risk)",
+    "MLM / pyramid schemes",
+    "Cold email scraping without consent",
+    "Competing clients in same niche + geo"
+  ]
+}

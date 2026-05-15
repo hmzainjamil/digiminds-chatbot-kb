@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "purpose": "Segment visitors by detected signals in first 2 messages. Lock segment by turn 2. Use to route tone, proof points, pricing range, and micro-action.",
+    "detection_signals": ["geo (IP + explicit mention)", "role title", "language (English / Urdish / Urdu)", "vocabulary (ROAS/CAC/MQL vs 'leads'/'sales')", "budget signals", "company size hints", "urgency words", "prior agency mentions"]
+  },
+
+  "segments": [
+
+    {
+      "id": "SEG_01_US_DTC_FOUNDER",
+      "label": "US/Canada DTC Ecommerce Founder",
+      "demographics": { "age": "25-40", "income": "USD 100k-2M revenue business", "education": "college+", "geo": ["US", "CA"] },
+      "psychographics": {
+        "values": ["speed", "data", "independence", "scale"],
+        "motivation": "Hit next revenue tier (7-fig → 8-fig); reduce founder dependence on ads",
+        "decision_style": "Analytical + gut; fast no, fast yes after 1-2 calls",
+        "frictions": ["been burned by agencies", "skeptical of offshore", "iOS14 attribution pain", "creative fatigue"]
+      },
+      "language": "American English, ecom vocab (ROAS, AOV, LTV, MER, 3PL, Klaviyo, Shopify)",
+      "tone": "consultative",
+      "proof_points_to_lead_with": ["DTC skincare case study", "tracking rescue case study", "server-side sGTM capability"],
+      "pricing_range": "USD 3,000-7,500/mo + ad spend",
+      "preferred_micro_action": "Book 20-min ROAS audit call",
+      "channels": ["Calendly", "email", "Slack on ask"],
+      "objections_likely": ["offshore trust", "account ownership", "agency track record"],
+      "messaging_hooks": ["recover iOS14 lost signal", "MER lift in 60 days", "scale past the $50k/day ceiling"]
+    },
+
+    {
+      "id": "SEG_02_US_UK_B2B_SAAS",
+      "label": "US/UK B2B SaaS Marketing Lead / Founder",
+      "demographics": { "age": "28-45", "role": "Head of Growth / CMO / Founder", "geo": ["US", "UK", "CA"] },
+      "psychographics": {
+        "values": ["pipeline predictability", "CFO-ready numbers", "clean attribution"],
+        "motivation": "Book demos that close; get off MQL-only reporting; prove CAC payback",
+        "decision_style": "Committee (often marketing + RevOps + CFO); longer cycle",
+        "frictions": ["HubSpot/Salesforce data mess", "sales not closing MQLs", "attribution politics"]
+      },
+      "language": "Crisp B2B English (MQL, SQL, PQL, ICP, ABM, Clearbit, 6sense, G2)",
+      "tone": "consultative, enterprise-polished",
+      "proof_points_to_lead_with": ["B2B SaaS case study (+217% MQL)", "closed-loop HubSpot–ad-platform", "intent-layered LinkedIn+Google"],
+      "pricing_range": "USD 4,500-12,000/mo + performance bonus",
+      "preferred_micro_action": "Book 30-min pipeline audit with founder",
+      "channels": ["Calendly", "email", "LinkedIn"],
+      "objections_likely": ["contract length", "security/DPA", "dedicated strategist vs pod"],
+      "messaging_hooks": ["turn MQLs into pipeline", "CAC payback under 9 months", "LinkedIn + intent the right way"]
+    },
+
+    {
+      "id": "SEG_03_UK_ENTERPRISE",
+      "label": "UK Enterprise / Mid-Market Marketing Manager",
+      "demographics": { "age": "30-50", "role": "Senior Marketing Manager / Director", "geo": ["UK", "EU"] },
+      "psychographics": {
+        "values": ["brand safety", "compliance (GDPR/ICO)", "reporting clarity"],
+        "motivation": "Hit board KPIs, defend budget, not get fined",
+        "decision_style": "Process-driven; RFP + procurement",
+        "frictions": ["GDPR + consent v2", "internal politics", "agency churn"]
+      },
+      "language": "Formal British English",
+      "tone": "formal-consultative",
+      "proof_points_to_lead_with": ["GDPR-compliant tracking", "server-side + consent mode v2", "UK client references available under NDA"],
+      "pricing_range": "USD/GBP 8,000-25,000/mo",
+      "preferred_micro_action": "Request detailed proposal / schedule scoping call",
+      "channels": ["email", "formal calendar invite"],
+      "objections_likely": ["DPA", "sub-processor list", "ISO/SOC2", "contract T&Cs"],
+      "messaging_hooks": ["consent-mode v2 done right", "server-side done correctly", "DPA + SCCs ready"]
+    },
+
+    {
+      "id": "SEG_04_UAE_GULF_BUSINESS",
+      "label": "UAE / Gulf Business Owner or Marketing Lead",
+      "demographics": { "age": "30-55", "nationality": "mixed (Emirati / expat South Asian / Levantine / European)", "geo": ["UAE", "Saudi", "Qatar"] },
+      "psychographics": {
+        "values": ["status", "relationship", "speed to market", "Arabic/English bilingual needs"],
+        "motivation": "Dominate local Google/Meta; leverage Ramadan/Eid/DSF cycles; multilingual targeting",
+        "decision_style": "Relationship + reputation first; faster close after trust established",
+        "frictions": ["Arabic creative quality", "local market depth", "VAT invoicing"]
+      },
+      "language": "English primary; respect for Arabic greetings (Marhaba, As-salamu alaykum) if initiated",
+      "tone": "formal-warm",
+      "proof_points_to_lead_with": ["B2C relocation case study (US/UAE corridor)", "multilingual targeting", "Ramadan campaign playbook"],
+      "pricing_range": "AED 15,000-60,000/mo (USD 4,000-16,000)",
+      "preferred_micro_action": "Book call or request WhatsApp conversation",
+      "channels": ["WhatsApp", "Calendly", "email"],
+      "objections_likely": ["local presence", "Arabic native speakers on team", "VAT-compliant invoicing"],
+      "messaging_hooks": ["Ramadan-ready", "bilingual ad creative", "UAE payment flexibility"]
+    },
+
+    {
+      "id": "SEG_05_PK_SMB_OWNER",
+      "label": "Pakistani SMB Owner (retail, import, manufacturing)",
+      "demographics": { "age": "35-55", "revenue": "PKR 50 lakh - 50 crore/yr", "geo": ["Karachi", "Lahore", "Islamabad", "Faisalabad", "Multan"] },
+      "psychographics": {
+        "values": ["trust", "referrals", "family-business continuity", "haggling culture"],
+        "motivation": "More calls, more walk-ins, more sales — not 'branding'",
+        "decision_style": "WhatsApp first, 2-3 calls, meet in person if Lahore/nearby, then close",
+        "frictions": ["burned by freelancers", "doesn't trust 'Facebook wale log'", "price sensitivity"]
+      },
+      "language": "Urdish (Roman Urdu + English mix); formal 'aap', 'Sir/Madam'",
+      "tone": "friendly-warm",
+      "proof_points_to_lead_with": ["local PK clients in similar vertical", "WhatsApp support", "Lahore office meeting option"],
+      "pricing_range": "PKR 150,000 – 450,000/mo",
+      "preferred_micro_action": "WhatsApp handoff or in-person Lahore meeting",
+      "channels": ["WhatsApp Business", "phone call", "in-person"],
+      "objections_likely": ["price vs freelancer", "trust/credibility", "'agencies sab chor hain'", "SECP/FBR legitimacy"],
+      "messaging_hooks": ["aap ki industry mein real results", "90-day guarantee", "Lahore office visit", "SECP registered, FBR filer"]
+    },
+
+    {
+      "id": "SEG_06_PK_ECOM_ENTREPRENEUR",
+      "label": "Pakistani Ecommerce Entrepreneur (Shopify/Daraz/WooCommerce)",
+      "demographics": { "age": "22-35", "geo": ["Karachi", "Lahore", "Islamabad"] },
+      "psychographics": {
+        "values": ["speed", "ROAS", "peer validation (FB groups, Discord)"],
+        "motivation": "Break past PKR 20 lakh/mo, crack international dropship, stop losing to ad account bans",
+        "decision_style": "Fast; cohort/peer-influenced; YouTube-educated",
+        "frictions": ["ad account bans", "COD RTO rate", "creative fatigue"]
+      },
+      "language": "English + Urdish; fluent in ads lingo",
+      "tone": "friendly-direct",
+      "proof_points_to_lead_with": ["DTC skincare case study", "Meta policy + account resilience", "ROAS benchmarks for PK+international"],
+      "pricing_range": "PKR 200,000 – 600,000/mo",
+      "preferred_micro_action": "WhatsApp or book 20-min call",
+      "channels": ["WhatsApp", "Calendly", "Instagram DM"],
+      "objections_likely": ["can I do it myself with YouTube", "account bans", "agency vs freelancer"],
+      "messaging_hooks": ["stop getting banned", "scale past the plateau", "international from PK — the right way"]
+    },
+
+    {
+      "id": "SEG_07_PK_ENTERPRISE_PROCUREMENT",
+      "label": "Pakistani Enterprise Marketing Manager (FMCG, telco, bank, textile)",
+      "demographics": { "age": "30-45", "role": "Marketing Manager / Brand Manager / Digital Head" },
+      "psychographics": {
+        "values": ["documentation", "vendor panel approval", "brand safety"],
+        "motivation": "Hit annual brand KPIs; get through procurement; not get fired",
+        "decision_style": "RFP, vendor onboarding, procurement committee",
+        "frictions": ["vendor registration", "ISO/tax docs", "NDA complexity"]
+      },
+      "language": "Formal English (occasional Urdu)",
+      "tone": "formal",
+      "proof_points_to_lead_with": ["SECP registration", "FBR ATL", "enterprise process maturity", "ISO-aligned (if applicable)"],
+      "pricing_range": "PKR 800,000 – 3,500,000/mo",
+      "preferred_micro_action": "Request proposal + vendor onboarding pack",
+      "channels": ["email", "formal meeting"],
+      "objections_likely": ["vendor panel", "invoicing + GST", "legal T&Cs", "enterprise case studies"],
+      "messaging_hooks": ["vendor-ready", "enterprise-grade governance", "full compliance stack"]
+    },
+
+    {
+      "id": "SEG_08_DIASPORA_PAKISTANI",
+      "label": "Overseas Pakistani Business Owner (US/UK/UAE diaspora)",
+      "demographics": { "age": "30-55", "geo": ["US", "UK", "UAE", "Canada"], "ethnicity": "Pakistani origin" },
+      "psychographics": {
+        "values": ["loyalty to home talent", "US-style professionalism expected", "trust via shared background"],
+        "motivation": "Combine PK pricing with Western service quality; help friends/family's businesses",
+        "decision_style": "Warm and direct; fast if trust established",
+        "frictions": ["timezone", "quality consistency", "contract enforcement across borders"]
+      },
+      "language": "English + Urdu when relaxed",
+      "tone": "balanced-warm",
+      "proof_points_to_lead_with": ["global + PK roots", "US-style contracts", "US/UK/UAE references"],
+      "pricing_range": "USD 3,000-8,000/mo",
+      "preferred_micro_action": "Book call; WhatsApp acceptable",
+      "channels": ["WhatsApp", "email", "calendar"],
+      "objections_likely": ["timezone", "quality vs cheaper options", "cross-border contract"],
+      "messaging_hooks": ["PK talent, Western standards", "timezone-flexible account management", "US LLC invoicing option"]
+    },
+
+    {
+      "id": "SEG_09_UNKNOWN_EXPLORER",
+      "label": "Unknown / Information-Gatherer / Early Explorer",
+      "demographics": { "signals": "Broad generic questions, no role or budget declared" },
+      "psychographics": {
+        "values": ["options", "learning", "comparison shopping"],
+        "motivation": "Build short-list of agencies; still researching",
+        "decision_style": "Slow; multiple touchpoints needed",
+        "frictions": ["doesn't know what to ask", "not decision-ready"]
+      },
+      "language": "Unknown — start balanced English",
+      "tone": "balanced-friendly",
+      "proof_points_to_lead_with": ["services overview", "guarantee", "case study teaser"],
+      "pricing_range": "Don't quote — pivot to audit/call",
+      "preferred_micro_action": "Lead magnet — email capture for case study pack / free audit PDF",
+      "channels": ["email first"],
+      "objections_likely": ["not ready to buy", "comparison with X"],
+      "messaging_hooks": ["free 5-min audit", "case study pack by email", "no-pressure discovery"]
+    }
+
+  ],
+
+  "segment_detection_rules": [
+    { "signal": "mentions 'ROAS', 'AOV', 'Klaviyo', 'Shopify'", "route_to": "SEG_01 or SEG_06 based on geo" },
+    { "signal": "mentions 'MQL', 'SQL', 'HubSpot', 'ICP', 'ABM'", "route_to": "SEG_02" },
+    { "signal": "mentions 'GDPR', 'ICO', 'consent', 'DPA'", "route_to": "SEG_03" },
+    { "signal": "geo UAE + business query", "route_to": "SEG_04" },
+    { "signal": "Roman Urdu / Urdu / 'bhai' / 'aap' / PKR mentioned", "route_to": "SEG_05 or SEG_06" },
+    { "signal": "mentions 'SECP', 'FBR', 'vendor panel', PK enterprise brand", "route_to": "SEG_07" },
+    { "signal": "PK-origin name + US/UK/UAE geo + bilingual", "route_to": "SEG_08" },
+    { "signal": "generic 'tell me about your services'", "route_to": "SEG_09 until more signal" }
+  ]
+}

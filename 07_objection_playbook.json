@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "structure": "each objection: trigger_phrases, preempt (raise it before the visitor does when signals appear), rebuttal, proof, micro_action, do_not_say",
+    "principle": "preempt > rebut > reframe. If you raise the objection first with an answer, it disarms 60%+ of resistance."
+  },
+
+  "objections": [
+    {
+      "id": "OBJ_01",
+      "name": "Too expensive",
+      "trigger_phrases": ["too expensive", "can't afford", "mehenga hai", "out of budget", "freelancer cheaper"],
+      "preempt": "When quoting price, always anchor with ROI math or a cheaper entry point first.",
+      "rebuttal": "Fair reaction. Retainer is typically 6-15% of ad spend — if we lift ROAS 20%, it pays itself back. If budget's tight, we have a $2,500 one-time audit (credits against future work) or a PKR 150k/mo starter.",
+      "proof": "Average client recovers management fee inside first 30 days via ad efficiency alone.",
+      "micro_action": "Offer audit-only engagement OR cheaper tier",
+      "do_not_say": ["we're worth it", "you get what you pay for", "our competitors charge more"]
+    },
+    {
+      "id": "OBJ_02",
+      "name": "Don't trust offshore / Pakistani agency",
+      "trigger_phrases": ["offshore", "trust", "Pakistani agency", "ethnic concerns", "security"],
+      "preempt": "In first 2 messages for US/UK visitors, reference multi-region client base without being defensive.",
+      "rebuttal": "Valid concern to raise. Three things: (1) you own all accounts from day one, (2) US LLC invoicing + Stripe available, (3) current US/UK clients as references under NDA. Lahore HQ is how we deliver senior strategist quality at mid-market prices, not a compromise on service.",
+      "proof": "Google Partner verified, SECP registered, US clients across DTC, HVAC, SaaS, relocation.",
+      "micro_action": "Offer client reference call + US LLC invoicing option",
+      "do_not_say": ["don't worry we're legit", "not all Pakistanis are scammers"]
+    },
+    {
+      "id": "OBJ_03",
+      "name": "Contract lock-in fear",
+      "trigger_phrases": ["lock-in", "long contract", "auto-renew", "cancel anytime"],
+      "preempt": "State contract terms before visitor asks.",
+      "rebuttal": "3-month initial commitment (matches the 90-day guarantee), then month-to-month, cancel anytime. No auto-renew. No exit fees. You own the accounts.",
+      "proof": "Our 90-day guarantee only makes sense because we want you to stay based on results, not contracts.",
+      "micro_action": "Offer contract template for review",
+      "do_not_say": ["standard industry practice", "trust us"]
+    },
+    {
+      "id": "OBJ_04",
+      "name": "Results timeline skepticism",
+      "trigger_phrases": ["how long", "when results", "too slow", "kitna time"],
+      "preempt": "Share honest timelines early — 2-3 weeks for paid signal, 60-90 day optimization.",
+      "rebuttal": "Paid media: 2-3 weeks first signal, 60-90 days full curve. SEO: 4-6 months. Tracking: 2-4 weeks. Anyone promising faster is lying or about to get your account banned.",
+      "proof": "Our 90-day guarantee is specifically calibrated to the honest window for paid to prove out.",
+      "micro_action": "Offer KPI framework in writing at kickoff",
+      "do_not_say": ["results in 7 days", "immediate ROI"]
+    },
+    {
+      "id": "OBJ_05",
+      "name": "Junior team / account manager churn",
+      "trigger_phrases": ["juniors", "who runs my account", "account manager change"],
+      "preempt": "Mention Fractional CMO / senior strategist model in first services description.",
+      "rebuttal": "Senior strategist on every account — no junior-only pods. Same strategist from kickoff through scale, no rotation every quarter.",
+      "proof": "You meet the strategist on the kickoff call before signing.",
+      "micro_action": "Offer intro call with assigned strategist",
+      "do_not_say": ["we have a great team", "don't worry"]
+    },
+    {
+      "id": "OBJ_06",
+      "name": "Guarantee sounds too good / fine print fear",
+      "trigger_phrases": ["guarantee", "fine print", "catch", "what's the trick"],
+      "preempt": "Volunteer the full terms before being asked.",
+      "rebuttal": "Full terms: KPIs agreed at kickoff, you maintain minimum ad spend + account access + no scope changes mid-flight. If we miss, we keep working free until we hit, or refund management fees. Ad spend never refunded — it belongs to the platform.",
+      "proof": "Full 2-page guarantee PDF sent on request.",
+      "micro_action": "Send guarantee PDF via email",
+      "do_not_say": ["trust us", "read the small print later"]
+    },
+    {
+      "id": "OBJ_07",
+      "name": "Already have an agency",
+      "trigger_phrases": ["already working with", "current agency", "happy with X"],
+      "preempt": "Don't attack — ask what's working and what's not.",
+      "rebuttal": "Good — don't switch if they're working. If anything specific is missing (tracking, CRM, server-side, guarantee), happy to run a free second-opinion audit on that one slice.",
+      "proof": "We often partner with or augment in-house teams, don't always replace.",
+      "micro_action": "Offer targeted audit on the one weak area",
+      "do_not_say": ["your agency is bad", "fire them"]
+    },
+    {
+      "id": "OBJ_08",
+      "name": "Need to talk to team/partner",
+      "trigger_phrases": ["talk to my partner", "need to discuss", "run it by"],
+      "preempt": "None — normal decision process, respect it.",
+      "rebuttal": "Totally get it. What can I send that makes that conversation easier — case study pack, pricing range PDF, our guarantee terms, or a 10-min Loom walkthrough?",
+      "proof": "N/A",
+      "micro_action": "Send decision-maker pack to email",
+      "do_not_say": ["why do you need to ask", "you're the decision maker"]
+    },
+    {
+      "id": "OBJ_09",
+      "name": "Comparing multiple agencies",
+      "trigger_phrases": ["evaluating options", "shortlist", "RFP", "comparing"],
+      "preempt": "Own it — offer comparison framework.",
+      "rebuttal": "Smart — 80% of bad agency hires come from not comparing. I'll send our differentiators vs the usual shortlist (KlientBoost, Disruptive, WebFX, Single Grain) and a comparison template you can use on everyone.",
+      "proof": "See `05_competitor_matrix.json`.",
+      "micro_action": "Send battlecard + comparison template",
+      "do_not_say": ["we're the best", "others are worse"]
+    },
+    {
+      "id": "OBJ_10",
+      "name": "Not ready to decide",
+      "trigger_phrases": ["thinking about it", "not now", "later", "baad mein"],
+      "preempt": "Never push for decision if not ready.",
+      "rebuttal": "Fair. Leave you with two useful things: (1) free audit — we identify $3-8k/mo of typical waste even if you never hire us, (2) case study pack. Both email-only, no calls.",
+      "proof": "N/A",
+      "micro_action": "Email capture + audit offer",
+      "do_not_say": ["when will you be ready", "time is of the essence"]
+    },
+    {
+      "id": "OBJ_11",
+      "name": "Can I do it myself / YouTube / AI",
+      "trigger_phrases": ["do it myself", "YouTube tutorials", "ChatGPT", "in-house"],
+      "preempt": "Validate — DIY is a legitimate path at some stages.",
+      "rebuttal": "If your ad spend is under $5k/mo and you have the time, DIY or a VA is often the right call — we'll tell you that honestly. Agencies earn their fee somewhere around $20-30k/mo ad spend, where the attention and tracking sophistication pay back. Where are you today?",
+      "proof": "We've told prospects to wait and come back at scale — we're not the right hire at every stage.",
+      "micro_action": "Qualify spend level + offer stage-appropriate resource",
+      "do_not_say": ["you can't do this alone", "amateurs fail"]
+    },
+    {
+      "id": "OBJ_12",
+      "name": "Timezone / working hours concern",
+      "trigger_phrases": ["timezone", "different hours", "US hours"],
+      "preempt": "For US/UK/Canada leads, mention timezone coverage early.",
+      "rebuttal": "Account managers overlap with PT, ET, GMT, GST — weekly calls in your timezone, Slack/email responses during your business hours.",
+      "proof": "Current US clients across PT and ET.",
+      "micro_action": "Offer timezone-specific intro call",
+      "do_not_say": ["we work 24/7", "we sleep later"]
+    },
+    {
+      "id": "OBJ_13",
+      "name": "Language / accent / communication fit",
+      "trigger_phrases": ["English fluency", "accent", "clear communication"],
+      "preempt": "Don't preempt — let the conversation itself demonstrate.",
+      "rebuttal": "Best way to judge is a 15-min call with the strategist who'd run your account. Book it, no pitch, just a conversation.",
+      "proof": "N/A — demonstrate, don't claim.",
+      "micro_action": "Book intro call",
+      "do_not_say": ["we speak perfect English", "native-level"]
+    },
+    {
+      "id": "OBJ_14",
+      "name": "Data security / GDPR / NDA",
+      "trigger_phrases": ["GDPR", "DPA", "data security", "NDA", "SOC 2"],
+      "preempt": "UK/EU/enterprise visitors: mention DPA + consent v2 in first technical answer.",
+      "rebuttal": "DPA + SCCs ready, consent mode v2 native, NDA on request (we sign yours or send ours), PECA + GDPR + UAE PDPL compliant. Not SOC 2 certified — if that's a hard bar, want to be upfront.",
+      "proof": "Full security stack documented, sent on request.",
+      "micro_action": "Send compliance pack",
+      "do_not_say": ["we're totally secure", "trust our practices"]
+    },
+    {
+      "id": "OBJ_15",
+      "name": "Payment method mismatch",
+      "trigger_phrases": ["PayPal", "credit card", "JazzCash", "crypto"],
+      "preempt": "When pricing discussed, mention payment flexibility.",
+      "rebuttal": "Pakistan: IBFT, JazzCash, EasyPaisa, cheque. International: Wise, Payoneer, bank wire, Stripe (US LLC), USDT. No PayPal (PK merchant issues).",
+      "proof": "Full payment options in proposal.",
+      "micro_action": "Confirm preferred payment at proposal stage",
+      "do_not_say": ["we don't accept X because it's bad", "everyone else accepts Y"]
+    },
+    {
+      "id": "OBJ_16",
+      "name": "Need enterprise compliance (ISO, SOC 2)",
+      "trigger_phrases": ["ISO 27001", "SOC 2", "HIPAA"],
+      "preempt": "For PK enterprise or US/UK mid-market, disclose early.",
+      "rebuttal": "We follow ISO-aligned practices; not ISO 27001 or SOC 2 certified. If that's a hard requirement, want to be upfront rather than waste your cycle. If flexible, we can provide written controls attestation + DPA.",
+      "proof": "Honest disclosure builds more trust than fake claims.",
+      "micro_action": "Clarify hard-vs-flexible requirement",
+      "do_not_say": ["we're basically SOC 2", "soon enough"]
+    },
+    {
+      "id": "OBJ_17",
+      "name": "Small budget / just starting out",
+      "trigger_phrases": ["small budget", "just started", "startup budget", "PKR 50k"],
+      "preempt": "Qualify ad spend + revenue early.",
+      "rebuttal": "Under $3k/mo ad spend, we honestly aren't the right hire yet. Use a solid VA + Meta Blueprint + GoHighLevel setup for now. Come back at $10-15k/mo ad spend and we'll deliver real leverage.",
+      "proof": "We've turned down small retainers when they weren't the right fit for client.",
+      "micro_action": "Offer resource pack + 'come back when ready' open door",
+      "do_not_say": ["you need us now", "amateurs lose money"]
+    },
+    {
+      "id": "OBJ_18",
+      "name": "Wants everything for free first",
+      "trigger_phrases": ["free trial", "show me results first", "no upfront"],
+      "preempt": "Clear pricing boundaries from turn 2.",
+      "rebuttal": "We don't do free trials — months of senior-strategist work isn't a trial. What we do offer: free 10-min audit (actionable, no commitment). That's your 'sample.' If it's useful, you know our quality. Fair trade?",
+      "proof": "Free audit = real deliverable, not marketing gimmick.",
+      "micro_action": "Free audit only",
+      "do_not_say": ["maybe a small free pilot", "bend the rules"]
+    },
+    {
+      "id": "OBJ_19",
+      "name": "Agency burned me — same playbook fear",
+      "trigger_phrases": ["same as last agency", "cookie-cutter", "template"],
+      "preempt": "Emphasize custom scope in every services answer.",
+      "rebuttal": "Every engagement is custom-scoped — no Silver/Gold/Platinum packages. We scope based on your vertical, spend, and stack. If onboarding feels cookie-cutter, you can walk (that's the 90-day guarantee angle).",
+      "proof": "Scoping call + custom proposal, not a standard deck.",
+      "micro_action": "Book scoping call",
+      "do_not_say": ["we're different I promise", "everyone says that"]
+    },
+    {
+      "id": "OBJ_20",
+      "name": "No time for onboarding",
+      "trigger_phrases": ["too busy", "no time", "hands-off"],
+      "preempt": "Reassure on low-touch onboarding.",
+      "rebuttal": "Kickoff takes 60 min total from you, spread across week 1. After that, you approve strategy monthly and review weekly Loom updates — most founders spend 30 min/week. We handle everything else.",
+      "proof": "Kickoff agenda sent pre-signature so you see the time commit.",
+      "micro_action": "Share onboarding timeline doc",
+      "do_not_say": ["it won't take any time", "fully autopilot"]
+    }
+  ],
+
+  "common_signals_of_hesitation_to_preempt": [
+    "long pause after pricing",
+    "'hmm' or 'okay...' with no follow-up question",
+    "'let me think about it'",
+    "ghost after third message",
+    "asks same question twice in different form",
+    "asks about cancellation/exit before signing"
+  ],
+
+  "rebuttal_stacking_rule": "Never rebut more than 2 objections in one message. If 3+ surface, address top 2 and ask: 'Which of the others matters most right now?'"
+}

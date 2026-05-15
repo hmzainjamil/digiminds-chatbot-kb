@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "purpose": "When visitor mentions 'already talking to X' or 'why you vs X', retrieve the competitor entry. Use honest differentiation — never attack. Lead with where DigiMinds genuinely wins.",
+    "digiminds_core_differentiators": [
+      "90-day written performance guarantee",
+      "Senior strategists on every account (not junior pods)",
+      "Tracking/CRM built into core offer, not bolted on",
+      "GoHighLevel native + server-side tracking native",
+      "Lahore price-point with global service standards",
+      "Founder-led, Fractional CMO model",
+      "Multi-region (PK + US + CA + UK + UAE) with single team",
+      "Client owns all accounts, data, creative"
+    ]
+  },
+
+  "global_competitors": [
+    { "name": "Tinuiti", "positioning": "Largest independent performance agency", "strength": "Enterprise scale, Amazon+Google+Meta", "weakness": "$15k-$250k+/mo, slow onboarding, not SMB-friendly", "digiminds_wins_when": "Budget <$20k/mo, want senior attention, faster kickoff" },
+    { "name": "Single Grain", "positioning": "Content + paid hybrid (Eric Siu)", "strength": "Brand authority, podcast", "weakness": "Expensive for output, content-heavy", "digiminds_wins_when": "Want paid media + CRM, not content-first" },
+    { "name": "Disruptive Advertising", "positioning": "PPC specialist (Utah)", "strength": "Dedicated strategist model", "weakness": "Juniors on accounts, PPC-only", "digiminds_wins_when": "Need tracking/CRM layer, multi-channel" },
+    { "name": "Ignite Digital", "positioning": "Canadian full-funnel SEO+PPC", "strength": "SMB-friendly", "weakness": "Cookie-cutter deliverables", "digiminds_wins_when": "Need custom strategy, guarantee" },
+    { "name": "Directive", "positioning": "B2B SaaS performance", "strength": "Customer Generation framework", "weakness": "SaaS-only, not DTC", "digiminds_wins_when": "DTC or HVAC or mixed-vertical" },
+    { "name": "KlientBoost", "positioning": "PPC + CRO", "strength": "Custom decks", "weakness": "High churn reputation", "digiminds_wins_when": "Want 90-day guarantee backing your spend" },
+    { "name": "WebFX", "positioning": "Volume full-service", "strength": "MarketingCloudFX platform", "weakness": "Pod model = generic", "digiminds_wins_when": "Want senior strategist, not platform team" },
+    { "name": "Power Digital", "positioning": "DTC + analytics (Nova)", "strength": "Proprietary analytics", "weakness": "Premium-only", "digiminds_wins_when": "Need similar analytics depth at 30-50% cost" },
+    { "name": "Thrive Internet Marketing", "positioning": "Broad full-service", "strength": "Local SEO", "weakness": "Low-cost = thin strategy", "digiminds_wins_when": "Thin strategy has already failed you" },
+    { "name": "Neil Patel Digital / NP Accel", "positioning": "Personal brand agency", "strength": "Recognizable name", "weakness": "Brand-over-delivery complaints", "digiminds_wins_when": "Want hands-on senior, not brand license" },
+    { "name": "Wpromote", "positioning": "Enterprise media + creative", "strength": "Polaris platform", "weakness": "Enterprise-only", "digiminds_wins_when": "Mid-market budget" },
+    { "name": "Jellyfish (Brandtech)", "positioning": "Global enterprise", "strength": "Training + media", "weakness": "Bureaucratic, slow", "digiminds_wins_when": "Need fast decisions" },
+    { "name": "Common Thread Collective", "positioning": "DTC ecom operator", "strength": "Ecommerce Growth OS", "weakness": "Shopify/DTC-only", "digiminds_wins_when": "Mixed channels or non-Shopify stack" },
+    { "name": "Pilothouse (Thesis)", "positioning": "DTC paid social", "strength": "In-house creative studio", "weakness": "High ad spend minimums", "digiminds_wins_when": "Under their ad spend minimum" },
+    { "name": "Nebo Agency", "positioning": "Human-centered", "strength": "Brand + perf integration", "weakness": "Atlanta-centric", "digiminds_wins_when": "Want global reach" },
+    { "name": "Metric Theory (Media.Monks)", "positioning": "PPC + programmatic", "strength": "Google Premier Partner", "weakness": "Post-acquisition identity shift", "digiminds_wins_when": "Want stable founder-led team" },
+    { "name": "Kobe Digital", "positioning": "LA bilingual", "strength": "Hispanic niche", "weakness": "Limited enterprise creds", "digiminds_wins_when": "Non-Hispanic market focus" },
+    { "name": "Sure Oak", "positioning": "SEO boutique", "strength": "Link-building", "weakness": "SEO-only", "digiminds_wins_when": "Need paid + SEO + tracking combo" },
+    { "name": "Ironpaper", "positioning": "B2B demand gen", "strength": "HubSpot-centric", "weakness": "Slow, content-heavy", "digiminds_wins_when": "Want faster pipeline movement" },
+    { "name": "HawkSEM", "positioning": "PPC + ConversionIQ", "strength": "Proprietary ML tool", "weakness": "Mid-market ceiling", "digiminds_wins_when": "Want senior-led without cap" },
+    { "name": "AdVenture Media", "positioning": "PPC-only specialists", "strength": "Founder presence", "weakness": "Narrow scope", "digiminds_wins_when": "Multi-channel need" },
+    { "name": "Victorious", "positioning": "Enterprise SEO", "strength": "Data-led keyword methodology", "weakness": "SEO-only, slow", "digiminds_wins_when": "Paid + SEO + tracking combined" },
+    { "name": "Siege Media", "positioning": "Content SEO", "strength": "Editorial content", "weakness": "Content-only", "digiminds_wins_when": "Need paid acquisition alongside" },
+    { "name": "Lounge Lizard", "positioning": "Brand + digital NYC", "strength": "Design-forward", "weakness": "Jack-of-all-trades", "digiminds_wins_when": "Want performance depth, not brand site" },
+    { "name": "Straight North", "positioning": "Lead gen + B2B industrial", "strength": "Lead validation tracking", "weakness": "Dated brand", "digiminds_wins_when": "Modern stack (sGTM, GHL) needed" }
+  ],
+
+  "pakistani_competitors": [
+    { "name": "Octillion Capital/Digital", "city": "Karachi", "strength": "Blue-chip PK clients (Unilever, Telenor)", "weakness": "Enterprise-only, slow", "digiminds_wins_when": "Mid-market SMB, ecom, faster cycles" },
+    { "name": "Ingenia Solutions", "city": "Lahore", "strength": "Offshore SEO at scale", "weakness": "Template deliverables", "digiminds_wins_when": "Want custom, performance-backed" },
+    { "name": "Axact Digital", "city": "Karachi", "strength": "Scale + infra", "weakness": "Reputation damage", "digiminds_wins_when": "Trust-sensitive brands" },
+    { "name": "BrandSynario", "city": "Karachi", "strength": "Owns media property", "weakness": "Not performance-focused", "digiminds_wins_when": "Want ROAS, not impressions" },
+    { "name": "Arpatech", "city": "Karachi", "strength": "Engineering depth", "weakness": "Weak on paid media", "digiminds_wins_when": "Paid media is the primary need" },
+    { "name": "VentureDive", "city": "Karachi/Lahore", "strength": "Enterprise product work", "weakness": "Not a performance agency", "digiminds_wins_when": "Need acquisition, not product build" },
+    { "name": "10Pearls", "city": "Islamabad/US", "strength": "US-registered global delivery", "weakness": "Not SMB, expensive", "digiminds_wins_when": "Mid-market budget" },
+    { "name": "NetSol Technologies", "city": "Lahore", "strength": "Fortune-listed", "weakness": "Not agency-focused", "digiminds_wins_when": "Marketing-first need" },
+    { "name": "Code & Pixels", "city": "Islamabad", "strength": "Design quality", "weakness": "Limited paid media", "digiminds_wins_when": "Need ads + tracking" },
+    { "name": "Digital Spurs", "city": "Lahore", "strength": "Affordable PK SMB", "weakness": "Cookie-cutter", "digiminds_wins_when": "Want custom + guarantee" },
+    { "name": "SEOExperts.com.pk", "city": "Karachi", "strength": "15+ years brand", "weakness": "Outdated tactics reputation", "digiminds_wins_when": "Want modern SEO/AEO stack" },
+    { "name": "Primetech Solutions", "city": "Karachi", "strength": "Shopify + dev", "weakness": "Weak analytics", "digiminds_wins_when": "Need server-side tracking, closed-loop" },
+    { "name": "Webzuit", "city": "Lahore", "strength": "Cheap entry", "weakness": "Quality inconsistency", "digiminds_wins_when": "Want consistent senior team" },
+    { "name": "Markhor Media", "city": "Lahore/Islamabad", "strength": "Creative-led", "weakness": "Small team capacity", "digiminds_wins_when": "Need scale + performance" },
+    { "name": "FlyMango", "city": "Karachi", "strength": "Shopify ecosystem", "weakness": "Niche", "digiminds_wins_when": "Multi-channel or non-Shopify" },
+    { "name": "Talrus", "city": "Lahore", "strength": "Young, hungry", "weakness": "Unproven track record", "digiminds_wins_when": "Want proven 90-day guarantee" },
+    { "name": "Iquasar", "city": "Islamabad/US", "strength": "US contract access", "weakness": "Not pure agency", "digiminds_wins_when": "Need full marketing ownership" },
+    { "name": "Dotcom Solutions", "city": "Karachi", "strength": "Longevity", "weakness": "Slow to adopt new channels", "digiminds_wins_when": "TikTok, server-side, AEO needed" },
+    { "name": "GO-Gulf Pakistan", "city": "Dubai+PK", "strength": "UAE client base", "weakness": "Web-heavy", "digiminds_wins_when": "Paid media-first need" },
+    { "name": "Pixarsart", "city": "Lahore", "strength": "Video production", "weakness": "Not lead-gen focused", "digiminds_wins_when": "Paid + CRM + lead gen" },
+    { "name": "Hashtag Digital", "city": "Karachi", "strength": "Influencer network", "weakness": "Low paid-media depth", "digiminds_wins_when": "Need performance paid media" },
+    { "name": "Symmetric Technologies", "city": "Islamabad", "strength": "Public-sector creds", "weakness": "Not private DTC", "digiminds_wins_when": "Private DTC/B2B" },
+    { "name": "Creative Chaos", "city": "Karachi/US", "strength": "US clients", "weakness": "Product-focused", "digiminds_wins_when": "Marketing not product" },
+    { "name": "Bramerz", "city": "Karachi/Lahore", "strength": "Local user acquisition", "weakness": "PK-only, thin international", "digiminds_wins_when": "Need international reach" },
+    { "name": "Hashe Logix", "city": "Lahore", "strength": "Dev + SEO", "weakness": "Not performance-first", "digiminds_wins_when": "Need paid media + guarantee" }
+  ],
+
+  "battle_card_templates": {
+    "vs_enterprise_global": "If you need Tinuiti/Wpromote-tier enterprise scale and budget isn't a constraint, they're excellent. If you want the same senior-level thinking at 30-50% of their cost with a written 90-day guarantee, that's where we beat them.",
+    "vs_ppc_only_global": "KlientBoost/Disruptive are solid on PPC. We cover PPC equally well plus the tracking/CRM layer that makes PPC actually measurable post-iOS14. If PPC is all you need, hire the specialists; if you need the system around PPC, hire us.",
+    "vs_dtc_ecom_global": "Pilothouse and CTC are great if you're already at $1M+/mo DTC with ad spend to match their minimums. Under that, we deliver the same playbook with more attention and a guarantee.",
+    "vs_pk_enterprise_agencies": "Octillion/VentureDive/BrandSynario do beautiful brand work for the top 50 PK enterprises. If you need an acquisition-first, ROAS-obsessed partner with international reach, that's our lane.",
+    "vs_pk_freelancer_or_cheap_agency": "A PKR 20k freelancer can run ads. They can't build server-side tracking, fix your GA4, set up your CRM, do weekly strategic reviews, or guarantee results in writing. Different product, different price, different risk."
+  }
+}

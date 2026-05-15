@@ -1,0 +1,427 @@
+{
+  "meta": {
+    "version": "1.0",
+    "schema": "each entry: id, category, question_variants[], answer, proof_point, micro_action, segment_tags[], geo_tags[], stage, tone",
+    "stages": ["awareness", "consideration", "evaluation", "decision", "post-objection"],
+    "tones": ["formal", "friendly", "balanced"],
+    "instruction": "Retrieve via semantic search on question_variants. If top match <0.7 cosine, fall back to intent categories + objection playbook."
+  },
+
+  "entries": [
+
+    {
+      "id": "KB_001",
+      "category": "services_overview",
+      "question_variants": ["What do you do?", "What services do you offer?", "Tell me about DigiMinds", "Kya services hain aap ki?", "What can you help with?"],
+      "answer": "We're a performance agency with four connected systems: paid media (Google/Meta/TikTok), high-ticket lead gen (B2B and premium B2C), DTC ecommerce growth, and the data/tracking/CRM layer that ties it all together. SEO + AEO sits on top. Headquartered in Lahore, serving clients in Pakistan, US, Canada, UK, and UAE.",
+      "proof_point": "Every engagement is covered by our 90-day performance guarantee — if agreed KPIs aren't hit, we keep working at no management fee until they are.",
+      "micro_action": "Which one of those is closest to what you need right now — paid ads, lead gen, ecom, or the tracking/CRM piece?",
+      "segment_tags": ["SEG_09", "ALL"],
+      "geo_tags": ["global"],
+      "stage": "awareness",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_002",
+      "category": "services_overview",
+      "question_variants": ["Do you do SEO?", "Can you rank my website?", "SEO kar sakte ho?"],
+      "answer": "Yes — SEO and Answer Engine Optimization (AEO for ChatGPT, Perplexity, Google AI Overviews). Technical, content, white-hat links, schema. First movement 60–90 days, meaningful traffic 4–6 months — anyone promising faster is selling a ban.",
+      "proof_point": "We're a Google Partner, and our technical audits catch issues 9 out of 10 competitors miss — rendering, Core Web Vitals, schema, AI discoverability.",
+      "micro_action": "Want a free 10-minute SEO + AEO audit of your current site? Drop your URL.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "awareness",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_003",
+      "category": "services_overview",
+      "question_variants": ["Do you run Google Ads?", "Meta ads?", "TikTok ads?", "Facebook ads chala sakte ho?"],
+      "answer": "Yes — Google, Meta (Facebook/Instagram), TikTok, YouTube, and LinkedIn for B2B. We're platform-agnostic; channel choice follows your audience, not our convenience.",
+      "proof_point": "Average across active paid accounts: 3.2x blended ROAS for DTC, and cost-per-booked-job down from $220 to $68 for our HVAC clients.",
+      "micro_action": "Which platform(s) are you running today, and what's working vs broken?",
+      "segment_tags": ["SEG_01", "SEG_05", "SEG_06"],
+      "geo_tags": ["global"],
+      "stage": "awareness",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_004",
+      "category": "pricing",
+      "question_variants": ["How much do you charge?", "What's your pricing?", "Kitne ka hai?", "Price batao", "What does it cost?"],
+      "answer": "Pricing is scoped — it depends on channels, ad spend, lead volume, and whether tracking/CRM work is needed. Typical ranges: PK SMB starts around PKR 150k/mo; DTC ecom growth USD 3k–7.5k/mo; B2B high-ticket USD 4.5k–12k/mo; enterprise fractional CMO USD 8k–25k/mo. Ad spend is separate and always belongs to you.",
+      "proof_point": "We don't do tiered Silver/Gold/Platinum packages — every scope is custom and sized to your revenue targets.",
+      "micro_action": "Give me your monthly ad spend range and I'll tell you exactly where you'd land — or book a 20-min scoping call and I'll have a custom number in your inbox within 24 hours.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "consideration",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_005",
+      "category": "pricing",
+      "question_variants": ["Do you have a minimum?", "Contract length?", "Do I have to sign long term?", "Lock-in?"],
+      "answer": "Minimum 3 months — which matches our 90-day guarantee window. After month 3, it's month-to-month. No auto-renew traps. No exit fees. You own the ad accounts, the tracking, the CRM data — all of it.",
+      "proof_point": "We win on results, not on locking you in. If we're not performing, you shouldn't be trapped.",
+      "micro_action": "That timeline work for you? If yes, let's scope it — calendar link or email, your choice.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_006",
+      "category": "guarantee",
+      "question_variants": ["What's the 90-day guarantee?", "Performance guarantee details?", "What's the fine print on your guarantee?"],
+      "answer": "We agree KPIs with you at kickoff (ROAS, CPL, booked appointments, whatever fits your model). If we don't hit them within 90 days, we keep working at zero management fee until we do, or we refund management fees for the months that missed. Ad spend stays with the platform — nobody refunds that.",
+      "proof_point": "The conditions: keep minimum ad spend, give us account access, no major scope changes mid-flight. That's it. No hidden clauses.",
+      "micro_action": "Want me to send the full guarantee terms PDF to your email?",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_007",
+      "category": "trust_credibility",
+      "question_variants": ["Can I see case studies?", "Show me results", "Proof?", "Kuch example do"],
+      "answer": "Yes. A few outcomes we're proud of: DTC skincare scaled $22k→$180k/mo in 7 months at 4.1x ROAS; 14 HVAC contractors cutting cost-per-job from $220 to $68; B2B SaaS +217% MQLs in 90 days; iOS14 attribution rescue recovering 38% of lost pixel events for an 8-figure ecom brand. I can send the full deck with numbers + screenshots.",
+      "proof_point": "Client names stay off public channels by default — most prefer it that way. Under NDA we share names + intros to current clients for references.",
+      "micro_action": "Drop your email and I'll send the case study pack for your vertical. Which one — DTC, B2B, HVAC/services, or tracking rescue?",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_008",
+      "category": "trust_credibility",
+      "question_variants": ["Are you a real company?", "Are you SECP registered?", "FBR filer ho?", "Is DigiMinds legitimate?"],
+      "answer": "Yes — DigiMinds is SECP registered, FBR active taxpayer (ATL), physical office at Ansari Market, Rehman Street, Lahore. Google Ads Partner verified. We invoice in PKR or USD with full documentation for your accountant or procurement team.",
+      "proof_point": "You can visit the Lahore office, meet the team, and we're happy to share registration docs before any contract.",
+      "micro_action": "Want the registration docs emailed? Or if you're in Lahore/Karachi/Islamabad, we can arrange a meeting this week.",
+      "segment_tags": ["SEG_05", "SEG_06", "SEG_07", "SEG_08"],
+      "geo_tags": ["PK"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_009",
+      "category": "trust_credibility",
+      "question_variants": ["Where are you based?", "What's your office address?", "Are you offshore?", "Kahan se ho?"],
+      "answer": "Headquartered in Lahore, Pakistan — Ansari Market, Rehman Street. That's the operational base. We serve clients across the US, Canada, UK, UAE, and Pakistan. Account managers work overlapping hours with your timezone.",
+      "proof_point": "Being Lahore-based means your budget goes further without sacrificing senior strategist time — which is why US founders and UK mid-market both hire us.",
+      "micro_action": "What timezone do you need coverage in? We'll confirm overlap before scoping.",
+      "segment_tags": ["SEG_01", "SEG_02", "SEG_03", "SEG_04"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_010",
+      "category": "trust_credibility",
+      "question_variants": ["Who will work on my account?", "Will it be juniors?", "Dedicated strategist?"],
+      "answer": "Every account has a senior strategist + paid media lead + creative/tracking support. No junior-only pods. Our model is Fractional CMO — meaning you get senior-level strategy, not a VA forwarding dashboard screenshots.",
+      "proof_point": "You meet your strategist on the kickoff call. Same person runs weekly reviews. No rotating account managers every 90 days.",
+      "micro_action": "Want to meet the strategist who'd run your account? 15-min intro — here's the calendar.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_011",
+      "category": "timeline_results",
+      "question_variants": ["When will I see results?", "How long does it take?", "Kitna time lagega?"],
+      "answer": "Paid media: meaningful signal in 2–3 weeks, full optimization curve 60–90 days. SEO/AEO: first movement 60–90 days, real traffic 4–6 months. Tracking/CRM sprints: 2–4 weeks. That's why our guarantee is 90 days — it's the honest window for paid to prove out.",
+      "proof_point": "Anyone promising first-page Google in 7 days or 10x ROAS in week one is either lying or about to get your account banned.",
+      "micro_action": "What's your timeline pressure — urgent, this quarter, or longer horizon? That changes the plan.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "consideration",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_012",
+      "category": "tracking_technical",
+      "question_variants": ["Do you do server-side tracking?", "sGTM?", "iOS14 attribution?", "CAPI setup?"],
+      "answer": "Yes — this is one of our core strengths. Server-side GTM, Meta CAPI, Google Enhanced Conversions, consent mode v2, closed-loop CRM-to-ad-platform. Most agencies bolt tracking on; we start with it.",
+      "proof_point": "One ecom brand recovered 38% of pixel-lost events post-iOS14 and unlocked $2.3M/yr in better budget decisions. Another brand: attribution accuracy from 58% to 91% in 3 weeks.",
+      "micro_action": "Want a free tracking audit? I'll scan your site for pixel/GA4 issues and send the report — just drop your URL + email.",
+      "segment_tags": ["SEG_01", "SEG_02", "SEG_03"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "formal"
+    },
+
+    {
+      "id": "KB_013",
+      "category": "tracking_technical",
+      "question_variants": ["Do you work with GoHighLevel?", "GHL expert?", "CRM automation?"],
+      "answer": "Yes — GoHighLevel is one of our core platforms. We build the full stack: pipelines, automations, calendars, two-way SMS, missed-call-text-back, Stripe/Shopify integrations, AI voice, and closed-loop attribution back to Google/Meta.",
+      "proof_point": "Our HVAC clients run entirely on GHL — lead capture to booked appointment to review request, all automated. That's how they cut cost-per-booked-job by 69%.",
+      "micro_action": "Are you on GHL already or considering it? Either way, let's map it on a 20-min call.",
+      "segment_tags": ["SEG_01", "SEG_02"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_014",
+      "category": "vertical_fit",
+      "question_variants": ["Do you work with DTC brands?", "Ecommerce?", "Shopify stores?"],
+      "answer": "Yes — DTC is one of our pillars. Apparel, skincare, beauty, home goods. Full funnel: paid acquisition + creative + feed optimization + Klaviyo/Postscript retention + LTV modeling.",
+      "proof_point": "Scaled a private-label skincare brand from $22k/mo to $180k/mo in 7 months at 4.1x blended ROAS.",
+      "micro_action": "What's your current monthly revenue and the ceiling you're stuck at? That tells me exactly where the bottleneck is.",
+      "segment_tags": ["SEG_01", "SEG_06"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_015",
+      "category": "vertical_fit",
+      "question_variants": ["Do you work with B2B?", "SaaS?", "Enterprise software?"],
+      "answer": "Yes — B2B SaaS is a core vertical. LinkedIn + Google intent layering, HubSpot/Salesforce closed-loop, ABM for enterprise, MQL→SQL pipeline engineering.",
+      "proof_point": "Mid-market SaaS client: +217% MQLs in 90 days, and SQL conversion rate doubled after we rebuilt the HubSpot–ad-platform feedback loop.",
+      "micro_action": "What's your current MQL→SQL conversion rate? If you don't know, that's the first fix we'd make together.",
+      "segment_tags": ["SEG_02"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "formal"
+    },
+
+    {
+      "id": "KB_016",
+      "category": "vertical_fit",
+      "question_variants": ["Do you work with HVAC?", "Contractors?", "Home services?"],
+      "answer": "Yes — HVAC, roofing, plumbing, home services are a specialty. Geo-intent Google + LSA + Meta remarketing + GHL appointment automation + review engine.",
+      "proof_point": "14 HVAC contractors onboarded. Average cost-per-booked-job: $220 → $68. That's the full playbook.",
+      "micro_action": "What's your current cost-per-booked-job? I can tell you within 2 minutes if there's $30+ of waste per call in your setup.",
+      "segment_tags": ["SEG_01"],
+      "geo_tags": ["US", "CA"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_017",
+      "category": "geographic",
+      "question_variants": ["Do you work with US clients?", "Can you serve US businesses?"],
+      "answer": "Yes — US clients are a major part of our book. Account managers overlap with PT and ET. We invoice in USD via Wise/Payoneer/Stripe. US-style contracts, DPAs, and NDAs on request.",
+      "proof_point": "Current US clients across DTC, HVAC, SaaS, and relocation services.",
+      "micro_action": "Which US timezone, and what's the use case? Let's scope it.",
+      "segment_tags": ["SEG_01", "SEG_02", "SEG_08"],
+      "geo_tags": ["US"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_018",
+      "category": "geographic",
+      "question_variants": ["Do you work with UK clients?", "UK agency?"],
+      "answer": "Yes — UK mid-market and enterprise. GDPR + consent mode v2 compliant setups, DPA + SCCs ready, GBP invoicing via Wise.",
+      "proof_point": "Our GDPR-compliant server-side stack is rare — most agencies still run pixel-only and leak signal + compliance risk.",
+      "micro_action": "Are you already consent-mode v2 compliant? If not, that's where we'd start — and it's a 2-week sprint.",
+      "segment_tags": ["SEG_03"],
+      "geo_tags": ["UK"],
+      "stage": "evaluation",
+      "tone": "formal"
+    },
+
+    {
+      "id": "KB_019",
+      "category": "geographic",
+      "question_variants": ["Do you work with UAE?", "Dubai?", "Gulf clients?"],
+      "answer": "Yes — UAE is one of our main markets. AED invoicing, VAT-compliant, bilingual (English + Arabic creative partners), Ramadan/Eid/DSF campaign planning built in.",
+      "proof_point": "B2C relocation service: cut quote-request CPL by 61% across US/UAE corridors.",
+      "micro_action": "Which emirate, and what's the target audience — UAE residents, GCC-wide, or global?",
+      "segment_tags": ["SEG_04"],
+      "geo_tags": ["UAE"],
+      "stage": "evaluation",
+      "tone": "formal"
+    },
+
+    {
+      "id": "KB_020",
+      "category": "payment",
+      "question_variants": ["How do I pay?", "Payment methods?", "JazzCash theek hai?", "Crypto accepted?"],
+      "answer": "Pakistan: IBFT, JazzCash, EasyPaisa, cheque (enterprise). International: Wise, Payoneer, bank wire, Stripe invoice (US LLC), USDT TRC-20 on request. We don't use PayPal — their PK merchant flow is broken. No Western Union, no COD.",
+      "proof_point": "We invoice monthly in advance, full GST/VAT docs when applicable, in PKR or USD.",
+      "micro_action": "Which method works for you? I'll queue up the invoice template.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "decision",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_021",
+      "category": "ownership",
+      "question_variants": ["Who owns the ad account?", "What happens if I leave?", "Can I take my data?"],
+      "answer": "You own everything. Ad accounts, tracking, CRM, creative, data, reports — all yours. On day one we either create accounts under your business or request admin access to existing ones. If you leave, you walk with the full setup. We don't hold your data hostage.",
+      "proof_point": "This is a deliberate ethical stance. Some agencies run ads through their own MCC to lock you in. We refuse.",
+      "micro_action": "Do you already have ad accounts set up, or do we need to create them at kickoff?",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_022",
+      "category": "reporting",
+      "question_variants": ["How often do I get reports?", "What kind of reporting?", "Dashboards?"],
+      "answer": "Live dashboard access 24/7 — GA4, Looker Studio, GHL, all connected. Weekly written review every Monday: what happened, what we're changing, what's next. Monthly strategy call. Revenue-first metrics, not impressions.",
+      "proof_point": "You'll never get a copy-paste screenshot report. If you want it, we'll build it. If it's vanity, we'll tell you.",
+      "micro_action": "Want a sample of our weekly report format emailed? One file, 2 minutes to review.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_023",
+      "category": "communication",
+      "question_variants": ["How do we communicate?", "Slack?", "WhatsApp available?", "Response time?"],
+      "answer": "Slack channel for each client, email for formal, WhatsApp Business for quick things (especially PK/UAE). Response time <30 min during business hours, <4 hours otherwise. Monthly strategy call on Zoom. No weekly 1-hour 'status meetings' that waste your time.",
+      "proof_point": "We also record every strategy call — transcripts in your shared drive within 1 hour.",
+      "micro_action": "What's your preferred primary channel — Slack, email, or WhatsApp?",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_024",
+      "category": "differentiation",
+      "question_variants": ["Why you vs another agency?", "Why not X competitor?", "What makes you different?"],
+      "answer": "Three things. One: we build the tracking + CRM layer, not just run ads — so you actually know what's working. Two: 90-day performance guarantee, rare in this space. Three: Lahore-based senior strategists at US mid-market prices, so you get better unit economics without giving up quality.",
+      "proof_point": "Most competitors in our price band are pod-based juniors or offshore freelancers. We're founder-led with senior strategists on every account.",
+      "micro_action": "Who else are you evaluating? I'll tell you honestly where we're the better fit and where we're not.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "evaluation",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_025",
+      "category": "onboarding",
+      "question_variants": ["What does onboarding look like?", "How do we start?", "First 30 days?"],
+      "answer": "Week 1: kickoff call + access provisioning + audit of existing setup. Week 2: KPI agreement + tracking/CRM rebuild + creative strategy. Week 3: campaigns live. Week 4: first optimization cycle. Weekly reviews from day one.",
+      "proof_point": "Our onboarding is a shared Notion/ClickUp space — every task, every deliverable, visible to you in real time.",
+      "micro_action": "Ready to map out what your week 1 would look like? 20-min call and I'll walk you through.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "decision",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_026",
+      "category": "pk_local_trust",
+      "question_variants": ["Aap Lahore mein ho?", "Office kahan hai?", "Mil sakte hain?"],
+      "answer": "Ji haan — Ansari Market, Rehman Street, Lahore. Aap kabhi bhi visit kar sakte hain, chai pi kar mil lein. Karachi aur Islamabad mein quarterly client meetups bhi hote hain.",
+      "proof_point": "Physical office, SECP registered, FBR filer — legitimate operation, pakistani standards ke saath.",
+      "micro_action": "Lahore mein hain aap? Is week time nikalen — 30 min baith ke full plan discuss kar lete hain.",
+      "segment_tags": ["SEG_05"],
+      "geo_tags": ["PK"],
+      "stage": "evaluation",
+      "tone": "friendly"
+    },
+
+    {
+      "id": "KB_027",
+      "category": "pk_local_trust",
+      "question_variants": ["Pakistani clients?", "Koi local case study?", "PK brands ke saath kaam kiya hai?"],
+      "answer": "Ji, PK brands ke saath kaafi kaam hai — ecom, retail, service businesses. NDA ke baghair naam nahi dete, lekin references arrange kar sakte hain: aap ko seedha current client se baat karwa dein ge.",
+      "proof_point": "Local ecom brand ko PKR 8 lakh/mo se 45 lakh/mo tak scale kiya 6 mahine mein — 5.2x ROAS Meta par.",
+      "micro_action": "Aap ki industry kya hai? Exact match case study bhejte hain WhatsApp par — number share karen?",
+      "segment_tags": ["SEG_05", "SEG_06"],
+      "geo_tags": ["PK"],
+      "stage": "evaluation",
+      "tone": "friendly"
+    },
+
+    {
+      "id": "KB_028",
+      "category": "pk_ecom_specific",
+      "question_variants": ["Daraz pe bech raha hun", "Daraz seller ke liye kaam karte ho?", "Marketplace ads?"],
+      "answer": "Daraz par direct ads chalana limited hai, lekin hum Daraz seller ke liye Google + Meta + TikTok se external traffic chalate hain, aur apni website par funnel bana ke RTO bhi kam karte hain. Daraz sirf ek channel hai — asli leverage apni site + CRM par hota hai.",
+      "proof_point": "Ek Daraz + Shopify hybrid seller ka RTO 42% se 18% tak laaya — COD confirmation IVR + WhatsApp flow se.",
+      "micro_action": "Aap ka Daraz + own site split kya hai? Quick mein WhatsApp par batayen, main 2 min mein gap identify kar dunga.",
+      "segment_tags": ["SEG_06"],
+      "geo_tags": ["PK"],
+      "stage": "evaluation",
+      "tone": "friendly"
+    },
+
+    {
+      "id": "KB_029",
+      "category": "urgency_closer",
+      "question_variants": ["I'll think about it", "Let me decide later", "Baad mein batata hun"],
+      "answer": "Totally fair — no pressure. One thing worth knowing: every month you wait costs you either ad waste or missed revenue. A free 10-min audit costs you nothing and either confirms your setup is fine (peace of mind) or shows you a fix worth 10x the call.",
+      "proof_point": "We find ~$3–8k/mo of waste in 7 out of 10 audits we run. Even if you never hire us, the audit pays for itself.",
+      "micro_action": "Want the free audit? Just your website URL + email. 48-hour turnaround.",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "post-objection",
+      "tone": "balanced"
+    },
+
+    {
+      "id": "KB_030",
+      "category": "closer",
+      "question_variants": ["Okay let's talk", "Book a call", "How do we start?", "Chalo baat karte hain"],
+      "answer": "Perfect. Here's the calendar — 20-minute discovery, no pitch: [CALENDAR_LINK]. Pick any slot that works. Or if calendar isn't your thing, share email + WhatsApp and we'll reach out within 2 business hours.",
+      "proof_point": "",
+      "micro_action": "Calendar or direct contact — which works better?",
+      "segment_tags": ["ALL"],
+      "geo_tags": ["global"],
+      "stage": "decision",
+      "tone": "balanced"
+    }
+
+  ],
+
+  "expansion_plan": {
+    "note": "This is the v1 core set (30 entries). Expand iteratively to 300–500 entries using chat transcripts, support tickets, and A/B testing. Priority expansion categories below.",
+    "priority_expansion_categories": [
+      "services_overview (30 more — per channel, per vertical combo)",
+      "pricing (20 more — objection angles, negotiation, package comparisons)",
+      "trust_credibility (25 more — references, awards, team bios, industry-specific proof)",
+      "timeline_results (15 more — per channel specifics)",
+      "tracking_technical (40 more — every tracking pain point, every stack combo)",
+      "vertical_fit (50 more — each sub-vertical with its own case study)",
+      "geographic (20 more — each city/region specific trust signal)",
+      "payment (15 more — every payment method edge case)",
+      "ownership (10 more — data portability, IP, cancellation)",
+      "reporting (15 more — dashboard specifics, custom reports)",
+      "communication (10 more — every channel preference)",
+      "differentiation (25 more — head-to-head against top 25 competitors)",
+      "onboarding (15 more — per service onboarding specifics)",
+      "pk_local_trust (30 more — city by city, community by community)",
+      "pk_ecom_specific (25 more — Daraz, Shopify PK, COD, SBP rules)",
+      "urgency_closer (20 more — varied closers per segment)",
+      "post_signup_anxiety (20 new — reassurance between decision and first deliverable)",
+      "competitive_counter (25 new — 'already talking to X agency' handling)"
+    ]
+  }
+}
