@@ -1,5 +1,9 @@
 # digiminds-chatbot-kb
 
+<!-- HMZ PORTFOLIO STANDARD -->
+> Portfolio status: active · Visibility: public · Source of truth: current repository source.
+<!-- END HMZ PORTFOLIO STANDARD -->
+
 > **DigiMinds Chatbot KB** — Agency knowledge base: FAQs, SOPs, service catalog, pricing logic, and escalation flows for AI chatbot.
 
 <p align="center">
